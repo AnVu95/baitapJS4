@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Function</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Bài 1 -->
+    <div class="container">
+        <div class="w-50 py-5">
+            <h2>Bài 1: Tính điểm thi</h2>
+            <form>
+                <div class="form-group">
+                    <label for="number">Nhập điểm chuẩn</label>
+                    <input type="number" class="form-control" id="inpDiemChuan">
+                </div>
+                <div class="form-group">
+                    <label for="number">Toán</label>
+                    <input type="number" class="form-control" id="inpDiemToan">
+                </div>
+                <div class="form-group">
+                    <label for="number">Lý</label>
+                    <input type="number" class="form-control" id="inpDiemLy">
+                </div>
+                <div class="form-group">
+                    <label for="number">Hoá</label>
+                    <input type="number" class="form-control" id="inpDiemHoa">
+                </div>
+                <h2>Chọn khu vực</h2>
+                <div class="form-group">
+                    <select class="form-control" id="inpKhuVuc">
+                        <option value="">Chọn khu vực</option>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                    </select>
+                </div>
+                <h2>Chọn đối tượng</h2>
+                <div class="form-group">
+                    <select class="form-control" id="inpDoiTuong">
+                        <option value="">Chọn đối tượng</option>
+                        <option value="dt1">1</option>
+                        <option value="dt2">2</option>
+                        <option value="dt3">3</option>
+                    </select>
+                </div>
+                <button id="btnTinh" type="button" class="btn btn-primary">Tính điểm</button>
+                <p class="alert alert-danger mt-3" id="txtKetQua"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bài 2 -->
+    <div class="container">
+        <div class="w-50 py-5">
+            <h2>Bài 2: Tính tiền điện</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nhập họ và tên</label>
+                    <input type="text" class="form-control" id="inpHoTen">
+                </div>
+                <div class="form-group">
+                    <label for="number">Nhập số Kw điện</label>
+                    <input type="number" class="form-control" id="inpKwDien">
+                </div>
+                <button id="btnTinhTienDien" type="button" class="btn btn-primary">Tính tiền</button>
+                <p class="alert alert-danger mt-3" id="txtTinh"></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="./js/bai1.js"></script>
+    <script src="./js/bai2.js"></script>
+</body>
+
+</html>
