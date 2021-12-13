@@ -11,7 +11,7 @@ const gia_ConLai = 1300;
 function tinhTienDien(){
     var hoTen = document.getElementById("inpHoTen").value;
     var soKw = Number(document.getElementById("inpKwDien").value);
-    var tienDien = tinhSoKw(soKw, gia_50kw_Dau, gia_50kw_Ke, gia_100kw_Ke, gia_150kw_Ke, gia_ConLai);
+    var tienDien = new Intl.NumberFormat().format(tinhSoKw(soKw, gia_50kw_Dau, gia_50kw_Ke, gia_100kw_Ke, gia_150kw_Ke, gia_ConLai));
     document.getElementById("txtTinh").innerHTML = "Họ Tên: " + hoTen + "." + " Tiền điện: " + tienDien;
 }
 
